@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="header">
+        My Calculator
+    </header>
+    <section>
+        <div class="Calculator">
+            <form action="" name="forms">
+            <input type="text" name="ans" id="answer" readonly><br><br>
+            <input type="button" value=" 1 " onclick= "forms.ans.value+= '1'">
+            <input type="button" value="2" onclick= "forms.ans.value+= '2'">
+            <input type="button" value="3" onclick= "forms.ans.value+= '3'">
+            <br><br>
+
+            <input type="button" value="4" onclick= "forms.ans.value+= '4'">
+            <input type="button" value="5" onclick= "forms.ans.value+= '5'">
+            <input type="button" value="6" onclick= "forms.ans.value+= '6'">
+            <br><br>
+
+            <input type="button" value="7" onclick= "forms.ans.value+= '7'">
+            <input type="button" value="8" onclick= "forms.ans.value+= '8'">
+            <input type="button" value="9" onclick= "forms.ans.value+= '9'">
+            <br><br>
+
+            <input type="button" value="+" onclick= "forms.ans.value+= '+'">
+            <input type="button" value="0" onclick= "forms.ans.value+= '0'">
+            <input type="button" value="-" onclick= "forms.ans.value+= '-'">
+            <br><br>
+
+            <input type="button" value="*"onclick= "forms.ans.value+= '*'">
+            <input type="button" value="/" onclick= "forms.ans.value+= '/'">
+            <input type="button" value="=" onclick= "forms.ans.value= eval(forms.ans.value)">
+            <br><br>
+
+            <input type="button" id="clear" value="Clear All" onclick= "forms.ans.value =''">
+            <!-- <input type="button" id="clear"  value="Back" onclick= "forms.ans.value =''"> -->
+            <button type="button" class="bi bi-arrow-left" id="clear" onClick= "forms.ans.value = forms.ans.value.slice(0,forms.ans.value.length-1)"> Back </button>
+        </form>
+        </div>
+    </section>
+    <footer>
+        <span>My Calculator</span>
+       <span>Developed by @Sandeeep Kumar</span>
+    </footer>
+</body>
+</html>
